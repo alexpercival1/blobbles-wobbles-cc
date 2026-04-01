@@ -1,0 +1,14 @@
+name: Sync
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Sync data
+        run: node sync-playcricket.mjs && node sync-spond.mjs; node merge-state.mjs

@@ -1,0 +1,1 @@
+{ "teams": ["Team A", "Team B"], "players": [{ "name": "Player 1", "team": "Team A" }, { "name": "Player 2", "team": "Team B" }] }
